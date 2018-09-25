@@ -21,6 +21,11 @@ allprojects {
                 user = System.getenv("BINTRAY_API_USER")
                 licenses = ['Apache-2.0']
                 labels = ['distributed tracing', 'opentracing', 'opentracing-contrib']
+                version {
+                    mavenCentralSync {
+                        sync = true
+                    }
+                }
             }
         }
     }
